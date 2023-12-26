@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap');
+
+@font-face {
+	src: url('assets/fonts/bitmap/PPMondwest-Regular.otf') format('opentype');
+	font-family: 'PPMondwest';
+	/* Additional font properties, if needed */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PPNeuBitBold';
+	src: url('assets/fonts/bitmap/PPNeueBit-Bold.otf') format('opentype');
+	/* Additional font properties, if needed */
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* For screens larger than 768px (typical tablet size) */
+@media (min-width: 364px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+/* For screens larger than 768px (typical tablet size) */
+@media (min-width: 768px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+/* For screens larger than 1024px (typical desktop size) */
+@media (min-width: 1024px) {
+	html {
+		font-size: 20px;
+	}
+}
