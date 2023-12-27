@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 @font-face {
 	src: url('assets/fonts/bitmap/PPMondwest-Regular.otf') format('opentype');
@@ -20,14 +20,14 @@
 /* For screens larger than 768px (typical tablet size) */
 @media (min-width: 364px) {
 	html {
-		font-size: 18px;
+		font-size: 12px;
 	}
 }
 
 /* For screens larger than 768px (typical tablet size) */
 @media (min-width: 768px) {
 	html {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 
