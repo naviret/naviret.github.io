@@ -46,11 +46,12 @@ th:first-child {
 .link-line {
 	font-weight: 400;
 	color: #000;
-	transition: transform 0.2s ease-in-out;
+	transition: font-weight 0.1s ease-in-out;
 }
 
 .link-line:hover {
 	cursor: pointer;
+	font-weight: 600;
 	animation: vibrate 0.3s ease-in-out infinite;
 }
 
