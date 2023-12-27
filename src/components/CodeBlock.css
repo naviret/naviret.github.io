@@ -44,15 +44,14 @@ th:first-child {
 }
 
 .link-line {
-	transition: 0.8s;
 	font-weight: 400;
 	color: #000;
+	transition: transform 0.2s ease-in-out;
 }
 
 .link-line:hover {
 	cursor: pointer;
-	background-color: #222e50;
-	color: white;
+	animation: vibrate 0.3s ease-in-out infinite;
 }
 
 .codeline:first-child div {

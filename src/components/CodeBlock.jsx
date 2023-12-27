@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CodeBlock.css';
 
 let TYPES = new Set(['FILE', 'int', 'pid_t']);
@@ -45,6 +45,46 @@ function highlightWords(line) {
 }
 
 function CodeBlock(props) {
+	const [hoveredLine, setHoveredLine] = useState([]);
+
+	function renderLine(line, index) {
+		const className = getClassBasedOnText(line);
+		const isLineHovered = hoveredLine.includes(index);
+		if (className === 'link-line') {
+			return (
+				<div
+					className={getClassBasedOnText(line)}
+					onMouseEnter={() =>
+						setHoveredLine((prevHoveredLines) => [
+							...prevHoveredLines,
+							index,
+						])
+					}
+					onMouseLeave={() =>
+						setHoveredLine((prevHoveredLines) =>
+							prevHoveredLines.filter(
+								(hoveredIndex) => hoveredIndex !== index,
+							),
+						)
+					}
+					// onClick={handleClick(line)}
+				>
+					{isLineHovered ? (
+						<div>{`${line}<--------------`}</div>
+					) : (
+						<div>{line}</div>
+					)}
+				</div>
+			);
+		} else {
+			return (
+				<div className={getClassBasedOnText(line)}>
+					<div>{highlightWords(line)}</div>
+				</div>
+			);
+		}
+	}
+
 	return (
 		<div className='codeblock'>
 			<table>
@@ -55,9 +95,7 @@ function CodeBlock(props) {
 								<div>{index + 1}</div>
 							</td>
 							<td className='line'>
-								<div className={getClassBasedOnText(item.line)}>
-									<div>{highlightWords(item.line)}</div>
-								</div>
+								{renderLine(item.line, index)}
 							</td>
 						</tr>
 					))}
