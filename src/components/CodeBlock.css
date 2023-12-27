@@ -1,0 +1,69 @@
+.codeblock {
+	width: 70%;
+	font-size: 1.25rem;
+}
+
+.codeblock table {
+	border-collapse: collapse;
+	/* border-color: black; */
+	width: 100%;
+	padding: 10px 0px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.codeblock td,
+th {
+	border-left: 1px solid #cacaca;
+}
+
+.codeblock td:first-child,
+th:first-child {
+	border-left: none; /* No left border for the first column */
+}
+
+.num {
+	width: 12.5%;
+	font-family: 'Fira Code';
+	color: #adacac;
+	/* background-color: #e4e4e4; */
+}
+
+.num div {
+	width: 65%;
+	text-align: right;
+}
+
+.line div {
+	padding: 0px 20px;
+	font-family: 'Fira Code';
+}
+
+.default-line {
+	font-weight: 200;
+	color: #7a7979;
+}
+
+.link-line {
+	transition: 0.8s;
+	font-weight: 400;
+	color: #000;
+}
+
+.link-line:hover {
+	cursor: pointer;
+	background-color: #222e50;
+	color: white;
+}
+
+.codeline:first-child div {
+	margin-top: 15px;
+}
+
+.codeline:last-child div {
+	margin-bottom: 15px;
+}
+
+.type {
+	font-weight: 500;
+	color: #ff3366;
+}

@@ -1,0 +1,19 @@
+.homepage {
+	background-color: aliceblue;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.name {
+	font-family: 'PPMondwest';
+	font-size: 5rem;
+	width: 50%;
+	text-align: center;
+}
+
+.name span {
+	color: #ff3366;
+}
