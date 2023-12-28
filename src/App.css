@@ -20,14 +20,14 @@
 /* For screens larger than 768px (typical tablet size) */
 @media (min-width: 364px) {
 	html {
-		font-size: 12px;
+		font-size: 8px;
 	}
 }
 
 /* For screens larger than 768px (typical tablet size) */
 @media (min-width: 768px) {
 	html {
-		font-size: 16px;
+		font-size: 12px;
 	}
 }
 
