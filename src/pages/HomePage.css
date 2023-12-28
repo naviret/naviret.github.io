@@ -1,19 +1,52 @@
 .homepage {
-	background-color: aliceblue;
+	padding-top: 8%;
+	background-color: white;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.content-home {
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 
 .name {
 	font-family: 'PPMondwest';
 	font-size: 5rem;
 	width: 50%;
-	text-align: center;
+	text-align: start;
 }
 
 .name span {
-	color: #ff3366;
+	/* color: #ff3366; */
+	color: #72b01d;
+	display: inline-block;
+}
+
+@keyframes vibrate {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(-2px, 2px);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	75% {
+		transform: translate(2px, -2px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+.name span:hover {
+	animation: vibrate 0.3s ease-in-out infinite;
 }

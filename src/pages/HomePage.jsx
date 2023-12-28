@@ -1,6 +1,7 @@
 import React from 'react';
-import CodeBlock from '../components/CodeBlock';
 import './HomePage.css';
+import CodeBlock from '../components/CodeBlock';
+import SocialLinks from '../components/SocialLinks';
 
 function HomePage() {
 	const content = [
@@ -27,7 +28,10 @@ function HomePage() {
 			<div className='name'>
 				Hi! I'm <span>Ivan</span> Rivera
 			</div>
-			<CodeBlock content={content} />
+			<div className='content-home'>
+				<CodeBlock content={content} />
+				<SocialLinks />
+			</div>
 		</div>
 	);
 }
