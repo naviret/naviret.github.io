@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CodeBlock.css';
+import { useNavigate } from 'react-router-dom';
 
 let TYPES = new Set(['FILE', 'int', 'pid_t']);
 let FUNCS = new Set(['fopen', 'getpid']);
@@ -46,6 +47,12 @@ function highlightWords(line) {
 
 function CodeBlock(props) {
 	const [hoveredLine, setHoveredLine] = useState([]);
+	const navigate = useNavigate();
+
+	function handleClick(line) {
+		const uri = line.toLowerCase().replace(/[^a-z]/g, '');
+		navigate(`/${uri}`);
+	}
 
 	function renderLine(line, index) {
 		const className = getClassBasedOnText(line);
@@ -67,7 +74,7 @@ function CodeBlock(props) {
 							),
 						)
 					}
-					// onClick={handleClick(line)}
+					onClick={() => handleClick(line)}
 				>
 					{isLineHovered ? (
 						<div>{`${line}<--------------`}</div>

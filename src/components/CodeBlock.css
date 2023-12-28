@@ -1,5 +1,5 @@
 .codeblock {
-	width: 70%;
+	width: 71%;
 	font-size: 1.25rem;
 }
 
@@ -65,5 +65,6 @@ th:first-child {
 
 .type {
 	font-weight: 500;
-	color: #ff3366;
+	color: #72b01d;
+	/* color: #ff3366; */
 }
