@@ -17,7 +17,7 @@ function App() {
 					path='/experiences'
 					element={<ExperiencesPage />}
 				></Route>
-				<Route path='/about' element={<AboutPage />}></Route>
+				<Route path='/aboutme' element={<AboutPage />}></Route>
 			</Routes>
 		</BrowserRouter>
 	);
