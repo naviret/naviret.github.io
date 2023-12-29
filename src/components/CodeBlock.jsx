@@ -7,7 +7,7 @@ let FUNCS = new Set(['fopen', 'getpid']);
 let DEFS = new Set(['AF_INET', 'SOCK_STREAM']);
 
 function getClassBasedOnText(text) {
-	if (text.includes('//')) {
+	if (text.includes('//') || text === 'Home ') {
 		return 'link-line';
 	}
 
@@ -60,7 +60,7 @@ function CodeBlock(props) {
 		if (className === 'link-line') {
 			return (
 				<div
-					className={getClassBasedOnText(line)}
+					className={className}
 					onMouseEnter={() =>
 						setHoveredLine((prevHoveredLines) => [
 							...prevHoveredLines,
@@ -77,7 +77,7 @@ function CodeBlock(props) {
 					onClick={() => handleClick(line)}
 				>
 					{isLineHovered ? (
-						<div>{`${line}<--------------`}</div>
+						<div>{`${line}------->`}</div>
 					) : (
 						<div>{line}</div>
 					)}
@@ -85,7 +85,7 @@ function CodeBlock(props) {
 			);
 		} else {
 			return (
-				<div className={getClassBasedOnText(line)}>
+				<div className={className}>
 					<div>{highlightWords(line)}</div>
 				</div>
 			);
@@ -93,14 +93,19 @@ function CodeBlock(props) {
 	}
 
 	return (
-		<div className='codeblock'>
+		<div
+			className='codeblock'
+			style={props.fontSize ? { fontSize: props.fontSize } : {}}
+		>
 			<table>
 				<tbody>
 					{props.content.map((item, index) => (
 						<tr className='codeline' key={index}>
-							<td className='num'>
-								<div>{index + 1}</div>
-							</td>
+							{
+								<td className='num'>
+									<div>{item.num ? item.num : index + 1}</div>
+								</td>
+							}
 							<td className='line'>
 								{renderLine(item.line, index)}
 							</td>

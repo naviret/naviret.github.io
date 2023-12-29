@@ -1,5 +1,4 @@
 .codeblock {
-	width: 71%;
 	font-size: 1.25rem;
 }
 
@@ -56,11 +55,11 @@ th:first-child {
 }
 
 .codeline:first-child div {
-	margin-top: 15px;
+	margin-top: 1.5%;
 }
 
 .codeline:last-child div {
-	margin-bottom: 15px;
+	margin-bottom: 1.5%;
 }
 
 .type {
