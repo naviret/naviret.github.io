@@ -14,7 +14,7 @@ function SocialLinks() {
 			<div className='social-links'>
 				<div className='social-icon' target='_blank'>
 					<a href=''>
-						<img src={FileIcon} alt='Drive'></img>
+						<img src={FileIcon} alt='Resume'></img>
 					</a>
 				</div>
 				<div className='social-icon'>
