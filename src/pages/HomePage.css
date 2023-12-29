@@ -16,6 +16,10 @@
 	width: 100%;
 }
 
+.codeblock-container {
+	width: 71%;
+}
+
 .name {
 	font-family: 'PPMondwest';
 	font-size: 5rem;

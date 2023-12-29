@@ -29,7 +29,9 @@ function HomePage() {
 				Hi! I'm <span>Ivan</span> Rivera
 			</div>
 			<div className='content-home'>
-				<CodeBlock content={content} />
+				<div className='codeblock-container'>
+					<CodeBlock content={content} />
+				</div>
 				<SocialLinks />
 			</div>
 		</div>
