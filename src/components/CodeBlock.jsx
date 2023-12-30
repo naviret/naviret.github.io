@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 let TYPES = new Set(['FILE', 'int', 'pid_t']);
 let FUNCS = new Set(['fopen', 'getpid']);
 let DEFS = new Set(['AF_INET', 'SOCK_STREAM']);
+let VARS = new Set(['skills']);
 
 function getClassBasedOnText(text) {
 	if (text.includes('//') || text === 'Home ') {
@@ -19,26 +20,23 @@ function highlightWords(line) {
 
 	// Map over the words and apply styling based on criteria
 	const highlightedWords = words.map((word, index) => {
+		let className = '';
+
 		if (TYPES.has(word)) {
-			return (
-				<span key={index} className='type'>
-					{word}
-				</span>
-			);
+			className = 'type';
 		} else if (FUNCS.has(word)) {
-			return (
-				<span key={index} className='func'>
-					{word}
-				</span>
-			);
+			className = 'func';
 		} else if (DEFS.has(word)) {
-			return (
-				<span key={index} className='def'>
-					{word}
-				</span>
-			);
+			className = 'def';
+		} else if (VARS.has(word)) {
+			className = 'var';
 		}
-		return word;
+
+		return (
+			<span key={index} className={className}>
+				{word}
+			</span>
+		);
 	});
 
 	// Join highlighted words into a string

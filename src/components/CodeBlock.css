@@ -67,3 +67,9 @@ th:first-child {
 	color: #72b01d;
 	/* color: #ff3366; */
 }
+
+.var {
+	font-weight: 500;
+	color: #72b01d;
+	color: #ff3366;
+}
