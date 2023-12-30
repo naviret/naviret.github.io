@@ -1,0 +1,16 @@
+.projects-page {
+	padding: 10%;
+}
+
+.projects-heading {
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+.projects-page-title {
+	text-align: center;
+}
+
+.projects-page .projects-container {
+	background-color: transparent;
+}
