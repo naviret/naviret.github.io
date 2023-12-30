@@ -1,14 +1,32 @@
 .project-container {
-	width: 65%;
+	width: 50%;
 	font-family: 'Fira Code';
-	background-color: brown;
 	padding: 2%;
+	background-color: aqua;
+}
+
+.project-header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.github-icon img {
+	height: 5vh;
 }
 
 .project-title {
 	font-size: 2rem;
 }
 
+.project-title a {
+	color: black;
+}
+
 .project-description {
 	margin-top: 1%;
+}
+
+.project-image img {
+	width: 100%;
 }
