@@ -1,0 +1,22 @@
+.button-container {
+	font-family: 'Fira Code';
+	font-size: 1.25rem;
+}
+
+.button {
+	width: fit-content;
+	padding: 10px 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-text {
+	padding: 0px 20px;
+	margin: 1.5% 0;
+	cursor: pointer;
+	transition: font-weight 0.1s ease-in-out;
+}
+
+.button-text:hover {
+	font-weight: 600;
+	animation: vibrate 0.3s ease-in-out infinite;
+}
