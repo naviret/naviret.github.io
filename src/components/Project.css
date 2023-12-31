@@ -15,8 +15,9 @@
 }
 
 .project-title {
-	font-size: 1.25rem;
+	font-size: 1.75rem;
 	margin-bottom: 1%;
+	font-family: 'PPNeuBitBold';
 }
 
 .project-title a {
@@ -24,8 +25,10 @@
 }
 
 .project-description {
+	font-family: 'IBM Plex Sans';
 	margin-top: 2%;
 	font-size: 0.9rem;
+	line-height: 1.4;
 }
 
 .project-image img {
