@@ -1,0 +1,22 @@
+.experiences-page {
+	padding: 10%;
+}
+
+.experiences-heading {
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+.experiences-page-title {
+	text-align: center;
+}
+
+.experiences-container {
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	overflow-x: auto;
+}
