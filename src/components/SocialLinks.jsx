@@ -1,7 +1,6 @@
 import React from 'react';
 import './SocialLinks.css';
 import FileIcon from '../assets/icons/file-drawn.png';
-import DriveIcon from '../assets/icons/drive-drawn.png';
 import GithubIcon from '../assets/icons/github-drawn.png';
 import GmailIcon from '../assets/icons/gmail-drawn.png';
 import LinkedInIcon from '../assets/icons/linkedin-drawn.png';
@@ -12,13 +11,21 @@ function SocialLinks() {
 	return (
 		<div className='social-links-container'>
 			<div className='social-links'>
-				<div className='social-icon' target='_blank'>
-					<a href=''>
+				<div className='social-icon'>
+					<a
+						href='https://www.google.com/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						<img src={FileIcon} alt='Resume'></img>
 					</a>
 				</div>
 				<div className='social-icon'>
-					<a href='https://github.com/naviret' target='_blank'>
+					<a
+						href='https://github.com/naviret'
+						target='_blank'
+						rel='noreferrer'
+					>
 						<img src={GithubIcon} alt='Github'></img>
 					</a>
 				</div>
@@ -26,6 +33,7 @@ function SocialLinks() {
 					<a
 						href='https://www.linkedin.com/in/ivaneduardorivera/'
 						target='_blank'
+						rel='noreferrer'
 					>
 						<img src={LinkedInIcon} alt='LinkedIn'></img>
 					</a>
