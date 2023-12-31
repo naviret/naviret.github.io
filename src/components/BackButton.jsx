@@ -13,7 +13,7 @@ function BackButton() {
 		<div className='button-container'>
 			<div className='button'>
 				<div className='button-text' onClick={() => handleClick()}>
-					{'<-- Home \\\\'}
+					{'<-- Home '}
 				</div>
 			</div>
 		</div>
