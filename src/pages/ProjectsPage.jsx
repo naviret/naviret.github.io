@@ -4,8 +4,14 @@ import bash from '../assets/icons/bash-drawn.png';
 import PageHeader from '../components/PageHeader';
 import Project from '../components/Project';
 import BackButton from '../components/BackButton';
+import ProjectsData from '../static/myinfo/ProjectsData';
 
 const proj = [{ line: 'skills = {"skill1", "skill2",  "skill3"}' }];
+
+function formatSkills(skillsArray) {
+	const formattedSkills = skillsArray.map((skill) => `"${skill}"`).join(', ');
+	return `skills = {${formattedSkills}}`;
+}
 
 function ProjectsPage() {
 	return (
@@ -17,18 +23,18 @@ function ProjectsPage() {
 				</div>
 			</div>
 			<div className='projects-container'>
-				<Project
-					title='Project'
-					link='https://github.com/naviret'
-					img={bash}
-					imgAlt='project-test'
-					skills={proj}
-					description={
-						<>
-							<b>BLABSL</b>DABLD
-						</>
-					}
-				/>
+				{ProjectsData.map((project, index) => (
+					<Project
+						key={index}
+						width={project.width}
+						title={project.title}
+						link={project.link}
+						img={project.img}
+						imgAlt={project.imgAlt}
+						skills={[{ line: formatSkills(project.skills) }]}
+						description={project.description}
+					/>
+				))}
 			</div>
 		</div>
 	);

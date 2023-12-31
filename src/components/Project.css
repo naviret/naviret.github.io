@@ -2,7 +2,6 @@
 	width: 50%;
 	font-family: 'Fira Code';
 	padding: 2%;
-	background-color: aqua;
 }
 
 .project-header {
@@ -16,7 +15,8 @@
 }
 
 .project-title {
-	font-size: 2rem;
+	font-size: 1.25rem;
+	margin-bottom: 1%;
 }
 
 .project-title a {
@@ -24,7 +24,8 @@
 }
 
 .project-description {
-	margin-top: 1%;
+	margin-top: 2%;
+	font-size: 0.9rem;
 }
 
 .project-image img {

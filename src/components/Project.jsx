@@ -5,12 +5,21 @@ import GithubIcon from '../assets/icons/github-drawn.png';
 
 function Project(props) {
 	return (
-		<div className='project-container' style={{ width: '50%' }}>
+		<div
+			className='project-container'
+			style={
+				props.width !== '' ? { width: props.width } : { width: '100%' }
+			}
+		>
 			<div className='project-header'>
 				<div className='project-title'>
-					<a href={props.link} target='_blank'>
-						{props.title}
-					</a>
+					{props.link !== '' ? (
+						<a href={props.link} target='_blank' rel='noreferrer'>
+							{props.title}
+						</a>
+					) : (
+						props.title
+					)}
 				</div>
 				{/* <div className='github-icon'>
 					<a href='https://github.com/naviret' target='_blank'>
