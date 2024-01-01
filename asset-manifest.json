@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fb798b1.css",
+    "main.js": "/static/js/main.82f40e4c.js",
+    "static/js/787.0f15b36d.chunk.js": "/static/js/787.0f15b36d.chunk.js",
+    "static/media/me.png": "/static/media/me.06e06a051b9493efdf24.png",
+    "static/media/webserver.gif": "/static/media/webserver.b77d9b4808cfdc1e0475.gif",
+    "static/media/bnab_drl.png": "/static/media/bnab_drl.5352c6ecc6e19ed10feb.png",
+    "static/media/microcontroller_driver.png": "/static/media/microcontroller_driver.b6dcfcddec850609fd8f.png",
+    "static/media/arcadegame.png": "/static/media/arcadegame.58842ba166d474ecaf02.png",
+    "static/media/movie-app.png": "/static/media/movie-app.597e1f45fbccce9af282.png",
+    "static/media/PPMondwest-Regular.otf": "/static/media/PPMondwest-Regular.ce30e67f1fe842818af2.otf",
+    "static/media/PPNeueBit-Bold.otf": "/static/media/PPNeueBit-Bold.0cab95cb9a49a1e13107.otf",
+    "static/media/nyscf.png": "/static/media/nyscf.6dbf36cf572ad5632cfa.png",
+    "static/media/whiting.png": "/static/media/whiting.e403ff25ca3ea8def6c5.png",
+    "static/media/github-drawn.png": "/static/media/github-drawn.8d707bb7f3243d679df9.png",
+    "static/media/bash-drawn.png": "/static/media/bash-drawn.2e233ed3e9db568815a0.png",
+    "static/media/linkedin-drawn.png": "/static/media/linkedin-drawn.67fb9e6d8842fa567e2a.png",
+    "static/media/gmail-drawn.png": "/static/media/gmail-drawn.712de0e63cbdbf3daf09.png",
+    "index.html": "/index.html",
+    "main.7fb798b1.css.map": "/static/css/main.7fb798b1.css.map",
+    "main.82f40e4c.js.map": "/static/js/main.82f40e4c.js.map",
+    "787.0f15b36d.chunk.js.map": "/static/js/787.0f15b36d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fb798b1.css",
+    "static/js/main.82f40e4c.js"
+  ]
+}
