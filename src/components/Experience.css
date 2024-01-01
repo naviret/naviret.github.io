@@ -1,0 +1,39 @@
+.experience-container {
+	font-family: 'Fira Code';
+	padding: 2%;
+	display: flex;
+	flex-direction: row;
+}
+
+.experience-logo {
+	width: 25%;
+	padding: 2%;
+}
+
+.experience-logo img {
+	width: 100%;
+}
+
+.experience-text {
+	width: 60%;
+}
+
+.experience-title {
+	font-family: 'PPNeuBitBold';
+	font-size: 2.55rem;
+}
+
+.experience-job-title {
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+
+.experience-date {
+	font-size: 1rem;
+}
+
+.experience-description {
+	font-family: 'IBM Plex Sans';
+	margin-top: 2%;
+	font-size: 0.9rem;
+}
