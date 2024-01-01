@@ -13,7 +13,7 @@ function SocialLinks() {
 			<div className='social-links'>
 				<div className='social-icon'>
 					<a
-						href='https://www.google.com/'
+						href='https://drive.google.com/file/d/1NHc0Fryd6t2KRT6xucqLEQ54ygGzdsi8/view?usp=sharing'
 						target='_blank'
 						rel='noreferrer'
 					>
